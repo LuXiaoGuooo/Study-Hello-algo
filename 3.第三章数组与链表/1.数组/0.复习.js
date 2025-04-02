@@ -1,12 +1,10 @@
-function extend(nums, enlarge){
-    let arr = new Array(nums.length + enlarge).fill(0)
-    for(let i = 0; i < nums.length ; i++){
-        arr[i] = nums[i]
+function insert(nums, num, index){
+    for(let i = nums.length - 1 ; i > index ; i--){
+        nums[i] = nums[i - 1]
     }
-    return arr
+    nums[index] = num
 }
 
-const arr = [1, 2, 3]
-const brr = extend(arr, 2)
-console.log(brr);
-
+const arr = [ 1, 2, 3]
+insert(arr , 20 , 1)
+console.log(arr)
