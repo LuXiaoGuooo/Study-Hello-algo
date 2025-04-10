@@ -1,1 +1,1 @@
-- 一个利用javascript学习hello-algo的库 
+- 一个利用javascript学习hello-algo的笔记
